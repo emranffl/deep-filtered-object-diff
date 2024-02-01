@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // base options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+
+    // strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    // transpile with typescript
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist/esm",
+    "sourceMap": true,
+
+    "lib": ["ES2022"],
+    "declaration": true,
+    "rootDir": "./src",
+    "declarationDir": "./dist/types"
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules", "dist"]
+}
